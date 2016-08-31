@@ -1,450 +1,74 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<!-- saved from url=(0018)https://lockin.in/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lockin - The Secure Platform For The Next Generation</title>
+    <meta name="description" content="Lockin - The Secure Platform For The Next Generation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap_dark_override.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-    <div class="modal fade" id="modal-tos" tabindex="-1" role="dialog" aria-labelledby="modal-tos-label" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </div>
-            <h4 class="modal-title" id="modal-tos-label">Terms of Service and Privacy Policy</h4>
-          </div>
-          <div class="modal-body">
-            <p>
-  <b>Agreement between user and https://lockin.in</b>
-  <br>
-  Welcome to https://lockin.in. The https://lockin.in website (the "Site") is comprised of various web
-  pages operated by Lockin LLC ("Lockin"). https://lockin.in is offered to you conditioned on your
-  acceptance without modification of the terms, conditions, and notices contained herein (the
-  "Terms"). Your use of https://lockin.in constitutes your agreement to all such Terms. Please read
-  these terms carefully, and keep a copy of them for your reference.
-  <br>
-  <br>
-  https://lockin.in is a E­commerce Site
-  <br>
-  Lockin provides online file storage named Vault. Users can upload, organize, stream, share and
-  download files of their choosing.
-  <br>
-  <br>
-  <b>Privacy</b>
-  Your use of https://lockin.in is subject to Lockin's Privacy Policy. Please review our Privacy
-  Policy, which also governs the Site and informs users of our data collection practices.
-  <br>
-  <br>
-  <b>Electronic Communications</b>
-  <br>
-  Visiting https://lockin.in or sending emails to Lockin constitutes electronic communications. You
-  consent to receive electronic communications and you agree that all agreements, notices,
-  disclosures and other communications that we provide to you electronically, via email and on the
-  Site, satisfy any legal requirement that such communications be in writing.
-  <br>
-  <br>
-  <b>Your account</b>
-  <br>
-  If you use this site, you are responsible for maintaining the confidentiality of your account and
-  password and for restricting access to your computer, and you agree to accept responsibility for
-  all activities that occur under your account or password. You may not assign or otherwise transfer
-  your account to any other person or entity. You acknowledge that Lockin is not responsible for
-  third party access to your account that results from theft or misappropriation of your account.
-  <br>
-  <br>
-  Lockin does not knowingly collect, either online or offline, personal information from persons
-  under the age of thirteen. If you are under 18, you may use https://lockin.in only with permission of
-  a parent or guardian.
-  <br>
-  <br>
-  <b>Cancellation/Refund Policy</b>
-  <br>
-  Lockin allows users to cancel their accounts at any time. Cancellations made after 30 days will not
-  qualify for a refund. Please contact support@lockin.in with any questions.
-  <br>
-  <br>
-  <b>Links to third party sites/Third party services</b>
-  <br>
-  https://lockin.in may contain links to other websites ("Linked Sites"). The Linked Sites are not
-  under the control of Lockin and Lockin is not responsible for the contents of any Linked Site,
-  including without limitation any link contained in a Linked Site, or any changes or updates to a
-  Linked Site. Lockin is providing these links to you only as a convenience, and the inclusion of any
-  link does not imply endorsement by Lockin of the site or any association with its operators.
-  <br>
-  Certain services made available via https://lockin.in are delivered by third party sites and
-  organizations. By using any product, service or functionality originating from the https://lockin.in
-  domain, you hereby acknowledge and consent that Lockin may share such information and data
-  with any third party with whom Lockin has a contractual relationship to provide the requested
-  product, service or functionality on behalf of https://lockin.in users and customers.
-  <br>
-  <br>
-  <b>No unlawful or prohibited use/Intellectual Property</b>
-  <br>
-  You are granted a non­exclusive, non­transferable, revocable license to access and use
-  https://lockin.in strictly in accordance with these terms of use. As a condition of your use of the
-  Site, you warrant to Lockin that you will not use the Site for any purpose that is unlawful or
-  prohibited by these Terms. You may not use the Site in any manner which could damage, disable,
-  overburden, or impair the Site or interfere with any other party's use and enjoyment of the Site.
-  You may not obtain or attempt to obtain any materials or information through any means not
-  intentionally made available or provided for through the Site.
-  <br>
-  All content included as part of the Service, such as text, graphics, logos, images, as well as the
-  compilation thereof, and any software used on the Site, is the property of Lockin or its suppliers
-  and protected by copyright and other laws that protect intellectual property and proprietary rights.
-  You agree to observe and abide by all copyright and other proprietary notices, legends or other
-  restrictions contained in any such content and will not make any changes thereto.
-  <br>
-  You will not modify, publish, transmit, reverse engineer, participate in the transfer or sale, create
-  derivative works, or in any way exploit any of the content, in whole or in part, found on the Site.
-  Lockin content is not for resale. Your use of the Site does not entitle you to make any
-  unauthorized use of any protected content, and in particular you will not delete or alter any
-  proprietary rights or attribution notices in any content. You will use protected content solely for
-  your personal use, and will make no other use of the content without the express written
-  permission of Lockin and the copyright owner. You agree that you do not acquire any ownership
-  rights in any protected content. We do not grant you any licenses, express or implied, to the
-  intellectual property of Lockin or our licensors except as expressly authorized by these Terms.
-  <br>
-  <br>
-  <b>Third Party Accounts</b>
-  <br>
-  You will be able to connect your Lockin account to third party accounts. By connecting your
-  Lockin account to your third party account, you acknowledge and agree that you are consenting to
-  the continuous release of information about you to others (in accordance with your privacy settings
-  on those third party sites). If you do not want information about you to be shared in this manner,
-  do not use this feature.
-  <br>
-  <br>
-  <b>International Users</b>
-  <br>
-  The Service is controlled, operated and administered by Lockin from our offices within the USA.
-  If you access the Service from a location outside the USA, you are responsible for compliance
-  with all local laws. You agree that you will not use the Lockin Content accessed through
-  https://lockin.in in any country or in any manner prohibited by any applicable laws, restrictions or
-  regulations.
-  <br>
-  <br>
-  <b>Indemnification</b>
-  <br>
-  You agree to indemnify, defend and hold harmless Lockin, its officers, directors, employees,
-  agents and third parties, for any losses, costs, liabilities and expenses (including reasonable
-  attorney's fees) relating to or arising out of your use of or inability to use the Site or services, any
-  user postings made by you, your violation of any terms of this Agreement or your violation of any
-  rights of a third party, or your violation of any applicable laws, rules or regulations. Lockin
-  reserves the right, at its own cost, to assume the exclusive defense and control of any matter
-  otherwise subject to indemnification by you, in which event you will fully cooperate with Lockin in
-  asserting any available defenses.
-  <br>
-  <br>
-  <b>Liability disclaimer</b>
-  <br>
-  THE INFORMATION, SOFTWARE, PRODUCTS, AND SERVICES INCLUDED IN OR
-  AVAILABLE THROUGH THE SITE MAY INCLUDE INACCURACIES OR
-  TYPOGRAPHICAL ERRORS. CHANGES ARE PERIODICALLY ADDED TO THE
-  INFORMATION HEREIN. LOCKIN LLC AND/OR ITS SUPPLIERS MAY MAKE
-  IMPROVEMENTS AND/OR CHANGES IN THE SITE AT ANY TIME.
-  <br>
-  LOCKIN LLC AND/OR ITS SUPPLIERS MAKE NO REPRESENTATIONS ABOUT THE
-  SUITABILITY, RELIABILITY, AVAILABILITY, TIMELINESS, AND ACCURACY OF
-  THE INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED
-  GRAPHICS CONTAINED ON THE SITE FOR ANY PURPOSE. TO THE MAXIMUM
-  EXTENT PERMITTED BY APPLICABLE LAW, ALL SUCH INFORMATION,
-  SOFTWARE, PRODUCTS, SERVICES AND RELATED GRAPHICS ARE PROVIDED "AS
-  IS" WITHOUT WARRANTY OR CONDITION OF ANY KIND. LOCKIN LLC AND/OR
-  ITS SUPPLIERS HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH
-  REGARD TO THIS INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND
-  RELATED GRAPHICS, INCLUDING ALL IMPLIED WARRANTIES OR CONDITIONS
-  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
-  NON­INFRINGEMENT.
-  <br>
-  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT
-  SHALL LOCKIN LLC AND/OR ITS SUPPLIERS BE LIABLE FOR ANY DIRECT,
-  INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES OR
-  ANY DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES
-  FOR LOSS OF USE, DATA OR PROFITS, ARISING OUT OF OR IN ANY WAY
-  CONNECTED WITH THE USE OR PERFORMANCE OF THE SITE, WITH THE DELAY
-  OR INABILITY TO USE THE SITE OR RELATED SERVICES, THE PROVISION OF OR
-  FAILURE TO PROVIDE SERVICES, OR FOR ANY INFORMATION, SOFTWARE,
-  PRODUCTS, SERVICES AND RELATED GRAPHICS OBTAINED THROUGH THE SITE,
-  OR OTHERWISE ARISING OUT OF THE USE OF THE SITE, WHETHER BASED ON
-  CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, EVEN IF
-  LOCKIN LLC OR ANY OF ITS SUPPLIERS HAS BEEN ADVISED OF THE POSSIBILITY OF DAMAGES. BECAUSE SOME STATES/JURISDICTIONS DO NOT
-  ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL
-  OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
-  IF YOU ARE DISSATISFIED WITH ANY PORTION OF THE SITE, OR WITH ANY OF
-  THESE TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO
-  DISCONTINUE USING THE SITE.
-  <br>
-  <br>
-  <b>Termination/access restriction</b>
-  <br>
-  Lockin reserves the right, in its sole discretion, to terminate your access to the Site and the related
-  services or any portion thereof at any time, without notice. To the maximum extent permitted by
-  law, this agreement is governed by the laws of the State of South Carolina and you hereby consent
-  to the exclusive jurisdiction and venue of courts in South Carolina in all disputes arising out of or
-  relating to the use of the Site. Use of the Site is unauthorized in any jurisdiction that does not give
-  effect to all provisions of these Terms, including, without limitation, this section.
-  <br>
-  You agree that no joint venture, partnership, employment, or agency relationship exists between
-  you and Lockin as a result of this agreement or use of the Site. Lockin's performance of this
-  agreement is subject to existing laws and legal process, and nothing contained in this agreement is
-  in derogation of Lockin's right to comply with governmental, court and law enforcement requests
-  or requirements relating to your use of the Site or information provided to or gathered by Lockin
-  with respect to such use. If any part of this agreement is determined to be invalid or unenforceable
-  pursuant to applicable law including, but not limited to, the warranty disclaimers and liability
-  limitations set forth above, then the invalid or unenforceable provision will be deemed superseded
-  by a valid, enforceable provision that most closely matches the intent of the original provision and
-  the remainder of the agreement shall continue in effect.
-  <br>
-  Unless otherwise specified herein, this agreement constitutes the entire agreement between the user
-  and Lockin with respect to the Site and it supersedes all prior or contemporaneous
-  communications and proposals, whether electronic, oral or written, between the user and Lockin
-  with respect to the Site. A printed version of this agreement and of any notice given in electronic
-  form shall be admissible in judicial or administrative proceedings based upon or relating to this
-  agreement to the same extent and subject to the same conditions as other business documents and
-  records originally generated and maintained in printed form. It is the express wish to the parties
-  that this agreement and all related documents be written in English.
-  <br>
-  <br>
-  <b>Changes to Terms</b>
-  <br>
-  Lockin reserves the right, in its sole discretion, to change the Terms under which https://lockin.in is
-  offered. The most current version of the Terms will supersede all previous versions. Lockin
-  encourages you to periodically review the Terms to stay informed of our updates.
-  <br>
-  <br>
-  Protecting your private information is our priority. This Statement of Privacy applies to the
-  https://lockin.in and Lockin LLC and governs data collection and usage. For the purposes of this
-  Privacy Policy, unless otherwise noted, all references to Lockin LLC include https://lockin.in and
-  Lockin. The Lockin website is a online file storage site. By using the Lockin website, you consent
-  to the data practices described in this statement.
-  <br>
-  <br>
-  <b>Collection of your Personal Information</b>
-  <br>
-  If you purchase Lockin's products and services, we collect billing and credit card information. This
-  information is used to complete the purchase transaction. We may gather additional personal or
-  non-personal information in the future.
-  Information about your computer hardware and software may be automatically collected by
-  Lockin. This information can include: your IP address, browser type, domain names, access times
-  and referring website addresses. This information is used for the operation of the service, to
-  maintain quality of the service, and to provide general statistics regarding use of the Lockin
-  website.
-  <br>
-  Please keep in mind that if you directly disclose personally identifiable information or personally
-  sensitive data through Lockin's public message boards, this information may be collected and used
-  by others.
-  <br>
-  Lockin encourages you to review the privacy statements of websites you choose to link to from
-  Lockin so that you can understand how those websites collect, use and share your information.
-  Lockin is not responsible for the privacy statements or other content on websites outside of the
-  Lockin website.
-  <br>
-  <br>
-  <b>Use of your Personal Information</b>
-  <br>
-  Lockin collects and uses your personal information to operate its website(s) and deliver the
-  services you have requested.
-  Lockin may also use your personally identifiable information to inform you of other products or
-  services available from Lockin and its affiliates. Lockin may also contact you via surveys to
-  conduct research about your opinion of current services or of potential new services that may be
-  offered.
-  <br>
-  Lockin does not sell, rent or lease its customer lists to third parties.
-  Lockin may share data with trusted partners to help perform statistical analysis, send you email or
-  postal mail, provide customer support, or arrange for deliveries. All such third parties are
-  prohibited from using your personal information except to provide these services to Lockin, and
-  they are required to maintain the confidentiality of your information.
-  <br>
-  Lockin may keep track of the websites and pages our users visit within Lockin, in order to
-  determine what Lockin services are the most popular. This data is used to deliver customized
-  content and advertising within Lockin to customers whose behavior indicates that they are
-  interested in a particular subject area.
-  <br>
-  Lockin will disclose your personal information, without notice, only if required to do so by law or
-  in the good faith belief that such action is necessary to: (a) conform to the edicts of the law or
-  comply with legal process served on Lockin or the site; (b) protect and defend the rights or
-  property of Lockin; and, (c) act under exigent circumstances to protect the personal safety of
-  users of Lockin, or the public.
-  <br>
-  <br>
-  <b>Security of your Personal Information</b>
-  <br>
-  Lockin secures your personal information from unauthorized access, use or disclosure. When
-  personal information (such as a credit card number) is transmitted to other websites, it is protected
-  through the use of encryption, such as the Secure Sockets Layer (SSL) protocol.
-  <br>
-  <br>
-  <b>Children Under Thirteen</b>
-  Lockin does not knowingly collect personally identifiable information from children under the age
-  of thirteen. If you are under the age of thirteen, you must ask your parent or guardian for
-  permission to use this website.
-  <br>
-  <br>
-  <b>Disconnecting your Lockin Account from Third Party Websites</b>
-  You will be able to connect your Lockin account to third party accounts. BY CONNECTING
-  YOUR LOCKIN ACCOUNT TO YOUR THIRD PARTY ACCOUNT, YOU
-  ACKNOWLEDGE AND AGREE THAT YOU ARE CONSENTING TO THE
-  CONTINUOUS RELEASE OF INFORMATION ABOUT YOU TO OTHERS (IN
-  ACCORDANCE WITH YOUR PRIVACY SETTINGS ON THOSE THIRD PARTY SITES).
-  IF YOU DO NOT WANT INFORMATION ABOUT YOU, INCLUDING PERSONALLY
-  IDENTIFYING INFORMATION, TO BE SHARED INTHIS MANNER, DO NOT USE THE
-  THIS FEATURE. You may disconnect your account from a third party account at any time. Users
-  can disconnect their third party accounts through the third party service. Alternatively, users can
-  contact us by email or telephone..
-  <br>
-  <br>
-  <b>Changes to this Statement</b>
-  <br>
-  Lockin will occasionally update this Statement of Privacy to reflect company and customer
-  feedback. Lockin encourages you to periodically review this Statement to be informed of how
-  Lockin is protecting your information.
-  <br>
-  <br>
-  <b>Contact Information</b>
-  <br>
-  Lockin welcomes your questions or comments regarding this Statement of Privacy. If you believe
-  that Lockin has not adhered to this Statement, please contact Lockin at:
-  <br>
-  <br>
-  Lockin LLC
-  <br>
-  1255 Laurel Street
-  <br>
-  Columbia, South Carolina 29201
-  <br>
-  <br>
-  Email Address:
-  <br>
-  accounts@lockin.in
-</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
+    <script src="./index_files/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./index_files/tether.min.css">
+    <script src="./index_files/tether.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./index_files/bootstrap.min.css">
+    <script src="./index_files/bootstrap.min.js"></script>
+    <link href="./index_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./index_files/bootstrap_dark_override.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://lockin.in/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://lockin.in/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://lockin.in/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://lockin.in/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://lockin.in/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://lockin.in/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://lockin.in/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://lockin.in/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://lockin.in/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://lockin.in/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://lockin.in/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://lockin.in/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://lockin.in/img/favicon-16x16.png">
+  </head>
+  <body>
+    <div class="overlayDark"></div>
+    <div class="videoContainer">
+      <video loop="" muted="" autoplay="" id="bgVideo">
+        <source src="index_files/vaultGif.webm" type="video/webm">
+        <source src="index_files/vaultGif.mp4" type="video/mp4">
+      </video>
     </div>
-    <nav class="navbar">
-  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar">
-    ☰
-  </button>
-  <div class="collapse navbar-toggleable-xs" id="navbar">
-    <a class="navbar-brand hidden-xs-down" href="../index.php">Lockin</a>
-    <ul class="nav navbar-nav">
-      <li class="p-x-2 nav-item  pull-xs-right"><a class="nav-link" href="support.php">Support</a></li>
-      <li class="nav-item pull-xs-right"><a class="nav-link" href="about.php">About</a></li>
-      <li class="nav-item pull-xs-right"><a class="nav-link" href="products.php">Products</a></li>
-      <li class="nav-item pull-xs-right"><a class="nav-link" href="store.php">Store</a></li>
-      <li class="nav-item pull-xs-right"><a class="nav-link" href="signin.php">Sign In</a></li>
-    </ul>
-  </div>
-</nav>
-    <div id="errors"></div>
-    <div class="container-fluid">
-      <div class="row">
-        <h1 class="text-xs-center">Sign in</h1>
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#user" role="tab">User Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#admin" role="tab">Admin Sign in</a>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane active" id="user" role="tabpanel">
-              <div class="card">
-                <div class="p-a-1">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <form action="signin.php" method="POST" autocomplete="off">
-                        <fieldset class="form-group">
-                          <label for="username">Username</label>
-                          <input type="text" class="form-control" id="username" name="username" onkeyup="usernameChecker('username',this.value,'signin');" placeholder="Enter Username">
-                          <small class="text-muted">Username you signed up with</small>
-                        </fieldset>
-                        <fieldset class="form-group">
-                          <label for="password">Password</label>
-                          <input type="password" class="form-control" id="password" name="password" onkeyup="passwordChecker('password',this.value,'signin');" placeholder="Enter Password">
-                          <small class="text-muted">We don't store raw passwords</small>
-                        </fieldset>
-                        <small>You are agreeing to our Terms of Service and Privay Policy by signing in. <a data-toggle="modal" data-target="#modal-tos">Show Them</a></small>
-                        <div class="clearfix"></div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="admin" role="tabpanel">
-              <div class="card">
-                <div class="p-a-1">
-                  <form action="signin.php" method="POST" autocomplete="off">
-                    <fieldset class="form-group">
-                      <label for="username">Admin Username</label>
-                      <input type="text" class="form-control" id="admin-username" name="admin-username" onkeyup="usernameChecker('admin-username',this.value,'signin');" placeholder="Enter Admin Username">
-                      <small class="text-muted">Username you signed up with</small>
-                    </fieldset>
-                    <fieldset class="form-group">
-                      <label for="password">Password</label>
-                      <input type="password" class="form-control" id="admin-password" name="admin-password" onkeyup="passwordChecker('admin-password',this.value,'signin');" placeholder="Password">
-                      <small class="text-muted">We don't store raw passwords</small>
-                    </fieldset>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                  </form>
-                </div>
+    <div style="z-index: 999; position: relative;">
+      <nav class="navbar">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar">
+      ☰
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="navbar">
+      <a class="navbar-brand hidden-xs-down" href="index.html">Lockin</a>
+      <ul class="nav navbar-nav">
+        <li class="p-x-2 nav-item  pull-xs-right"><a class="nav-link" href="support.html">Support</a></li>
+        <li class="nav-item pull-xs-right"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item pull-xs-right"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item pull-xs-right"><a class="nav-link" href="store.html">Store</a></li>
+        <li class="nav-item pull-xs-right"><a class="nav-link" href="sign-in.html">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div class="jumbotron vertical-center">
+              <div class="container">
+                <img src="./index_files/logoLettersIndex.png" class="img-fluid">
+                <div class="p-a-1"></div>
+                <h1 class="text-xs-center">Presenting Vault </h1>
+                <h3 class="text-xs-center">Secure File Storage for the consumer and business</h3>
+                <div class="p-a-1"></div>
+                <a href="store.html" target="_blank" class="no-style"><button class="btn btn-primary btn-lg center-block no-style">Sign up</button></a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
+          <div class="col-md-3"></div>
         </div>
       </div>
     </div>
-    <footer class="footer navbar-default navbar-fixed-bottom">
-  <div class="container-fluid">
-    <p class="text-xs-center">©2014-2016 Lockin</p>
-  </div>
-</footer>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    </body>
-</html>
+
+
+</body></html>
